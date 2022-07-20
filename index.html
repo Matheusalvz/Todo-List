@@ -21,16 +21,8 @@
                 <h3>Lista de Tarefas</h3>
                 
                 <div class="all-todos">
-                    <div class="single-todo done">
-                        <p>Aprender HTML, CSS e Javascript</p>
-                    </div>
-                    <div class="single-todo done">
-                        <p>Aprender o básico de Vue JS</p>
-                    </div>
-                    <div class="single-todo">
-                        <p>Completar o desafio de Vue JS com excelência</p>
-                    </div>
-
+                    <div class="single-todo" v-for="tarefa in tarefas" :class="{ done : tarefa.done }">
+                        <p>{{ tarefa.text }}</p>
                 </div>
 
                 <button class="clear">Limpar tudo</button>
@@ -41,7 +33,7 @@
                 <div class="instructions">
                     Instruções:
                     <ul>
-                        <li>Clique no texto da tarefa para alternar entre feita / não feita</li>
+                        <li>Clique no text o da tarefa para alternar entre feita / não feita</li>
                         <li>Use o botão limpar tudo para remover todas as tarefas</li>
                         <li>Use o input para adicionar novas tarefas</li>
                     </ul>
