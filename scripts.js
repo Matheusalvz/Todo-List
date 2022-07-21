@@ -19,6 +19,9 @@ const tarefasApp = {
                 alert("O texto da tarefa é obrigatório");
             };
         }
+    },
+    created()  {
+        this.tarefas = localStorage.getItem("tarefas") ? JSON.parse(localStorage.getItem("tarefas")) : this.tarefas;
     }
 };
 
