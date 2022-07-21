@@ -32,14 +32,14 @@
                 <button class="clear" @click="tarefas=[]" v-if="tarefas.length">Limpar tudo</button>
 
                 <input type="text" placeholder="Escreva uma nova tarefa..." v-model="novaTarefa.text" v-on:keyup.enter="adicionarTarefa" >
-                <button class="add" @click="adicionarTarefa">Adicionar</button>
+                <button class="add" @click="adicionarTarefa ">Adicionar</button>
 
                 <div class="instructions">
                     Instruções:
                     <ul>
                         <li>Clique no text o da tarefa para alternar entre feita / não feita</li>
                         <li>Use o botão limpar tudo para remover todas as tarefas</li>
-                        <li>Use o input para adicionar novas tarefas</li>
+                        <li>Use o input para adicionar novas tarefas</li> 
                     </ul>
                 </div>
             </section>
