@@ -14,6 +14,7 @@ const tarefasApp = {
                 this.novaTarefa = {
                     done: false
                 }
+                localStorage.setItem("tarefas", JSON.stringify(this.tarefas));
             }else {
                 alert("O texto da tarefa é obrigatório");
             };
